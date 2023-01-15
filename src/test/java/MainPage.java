@@ -18,7 +18,8 @@ public class MainPage {
         Selenide.open(url);
     }
     //Метод ввода в поле поиска.
-    /*В поле поиска передаем текст и, нажимаем ENTER*/
+    /*
+    *В поле поиска передаем текст и, нажимаем ENTER*/
     public void enterStringInSearchForm(String searchString){
         openSearchForm.click();
         inputSearchForm2.setValue(searchString);

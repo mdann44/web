@@ -13,6 +13,7 @@ abstract public class BaseTest {
         Configuration.driverManagerEnabled = true;//Присутствует библиотека webdrivermanager-её и будем использовать
         Configuration.browserSize = "1440x1100";
         Configuration.headless = false; //Будем ли мы видеть браузер во время теста?
+        //Configuration.timeout = 5000;
 
     }
     //Метод, запускаемый ПЕРЕД тестами
@@ -20,6 +21,7 @@ abstract public class BaseTest {
     public void init() {
         setUp();//Инициализируем браузер
     }
+
     //Метод, запускаемый ПОСЛЕ тестов
     @After
     public void tearDown(){
