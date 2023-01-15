@@ -30,7 +30,7 @@ public class SberHealthTest extends BaseTest {
     * соответствует искомой специальности*/
     @Test
     public void checkCorrectDoctorSpeciality(){
-        Selenide.open(BASE_URL+"/doctor/akusher/page/72");
+        Selenide.open(BASE_URL+"/doctor/akusher");
         DoctorListPage doctorListPage = new DoctorListPage();
         doctorListPage.specAllDocInMiniCard(SEARCH_STRING);
 
