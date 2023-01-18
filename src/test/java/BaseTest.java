@@ -11,8 +11,8 @@ abstract public class BaseTest {
         WebDriverManager.chromedriver().setup();
         Configuration.browser = "chrome";
         Configuration.driverManagerEnabled = true;//Присутствует библиотека webdrivermanager-её и будем использовать
-        Configuration.browserSize = "1440x1100";
-        Configuration.headless = false; //Будем ли мы видеть браузер во время теста?
+        Configuration.browserSize = "1200x1100";
+        Configuration.headless = true; //Будем ли мы видеть браузер во время теста?
         //Configuration.timeout = 5000;
 
     }

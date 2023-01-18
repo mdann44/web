@@ -39,7 +39,7 @@ public class DoctorListPage {
         String finish_page_num = pageNumButtonNotActive.last().getText();//Получил номер последней страницы
         int finish_page_num_int = Integer.parseInt(finish_page_num);//Преобразовал String в int
         System.out.println(finish_page_num_int);
-        for (int j = 72; j <= finish_page_num_int; j++) {//Цикл перебора всех страниц
+        for (int j = 1; j <= finish_page_num_int; j++) {//Цикл перебора всех страниц
             try {
                 System.out.println(j);
                 List<String> specDoc = new ArrayList<>();//Лист со всеми специальностями врачей с одной страницы
